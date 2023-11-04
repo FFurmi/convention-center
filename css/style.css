@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    --color-text: #3E3E3E;
+    --color-gray: #6C6C6C;
+    --color-light-gray:  #848199;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    color: var(--color-text);
+}
+section, footer{
+    margin-top: 100px;
+}
+
+/*---------------- Header ---------------*/
+.nav-title{
+    font-size: 22px;
+    font-weight: 700;
+}
+#item{
+    color: var(--color-text);
+    font-size: 16px;
+}
+#menu{
+    border: none;
+    color: #3E3E3E;
+   
+}
+
+#carouselExample img{
+    height: 500px;
+}
+/* ----------- Main  ------------*/
+
+/* Package */
+.title {
+    font-size: 3rem;
+}
+#unique-card{
+    box-shadow: 0px 25px 15px -15px #3F87F5;
+    position: relative;
+}
+#unique-card > .btn-choose{
+    background-color: #ffffff;
+}
+#hot{
+    position: absolute;
+    left: 70%;
+    top: -20px;
+    background: #FF4E4E;
+}
+.plan-list li{
+    list-style: none;
+    margin-bottom: 5px;
+    
+}
+.plan-list li:before {
+    content: '✓';
+    margin-right: 5px;
+    color: #5243C2;
+    margin-bottom: 30px;
+    background-color: #b4cbee;
+    border-radius: 50%;
+    padding: 1px 5px;
+  }
+
+.btn-choose{
+    background: #f1dcea;
+    color: #3F87F5;
+    padding: 0.8rem 3.8rem;
+}
+
+/* Client review */
+.clients-review, .fqa{
+    gap: 20px;
+}
+
+/* ------------- Footer ------------- */
+#apple-icon{
+    width: 135px;
+    height: 40px;
+}
+
+@media screen and (max-width:576px){
+    section, footer{
+        margin-top: 50px;
+    }
+    #carouselExample img{
+        height: 400px;
+    }
+    .title {
+        font-size: 1.5rem;
+    }
+    #nav-title{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:768px){
+ 
+    #hot{
+        left: 80%;
+    }
+}
